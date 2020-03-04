@@ -1,6 +1,29 @@
 # Infectious-Disease-SIR-Mathematical-Model
 Author: Yoseph Kurnia Soenggoro
 
+<div style = "display: table;">
+  <div style = "display: row;">
+    <div style = "display: column;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png" 
+      alt="Python Logo"
+      height="200px"
+      width="200px"></img>
+    </div>
+    <div style = "display: column;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1024px-LaTeX_logo.svg.png" 
+      alt="Python Logo"
+      height="200px"
+      width="450px"></img>
+    </div>
+    <div style = "display: column;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" 
+      alt="Python Logo"
+      height="200px"
+      width="200px"></img>
+    </div>
+  </div>
+</div>
+
 This GitHub Repository represents an implementation of SIR Model using Python. All documenatation and reports are within the repository. The Resources in here are all open source. All the code are written within the Jupyter notebook `Python_Code.ipynb` in sequential order. If more details and explanation are neede, feel free to read the `.pdf` file. Furthermore, if you want to change the report's content, feel free to access the `.tex` files under the `Latex Files` folder.
 
 ### Cloning the Repository
