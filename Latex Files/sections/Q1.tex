@@ -1,0 +1,42 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+    \begin{flushleft}
+        Given a system of ODE as follows.
+        
+        \begin{align}
+            & \frac{dS}{dt} = bS - \beta IS \\
+            & \frac{dI}{dt} = \beta IS - kI
+        \end{align}
+        
+        It could be defined two functions, $f(S, I) = bS - \beta IS$ and $g(S, I) = \beta IS - kI$, such that
+        
+        \begin{align}
+            & \frac{dS}{dt} = f(S, I) \\
+            & \frac{dI}{dt} = g(S, I)
+        \end{align}
+        
+        By definition, the equilibrium points are point $(S, I)$ such that $f(S, I) = g(S, I) = 0$. $(S, I) = (0, 0)$ obviously satisfies the condition and therefore an equilibrium point. In order to find the other one, consider when both $(S, I) = (0, 0)$. Hence, it is equivalent to solving the following system of equations.
+        
+        \begin{align}
+            & (b - \beta I)S = 0 \\
+            & (\beta S - k)I = 0
+        \end{align}
+        
+        which is equivalent to solving
+        
+        \begin{align*}
+            & b - \beta I = 0 \\
+            & \beta S - k = 0
+        \end{align*}
+        
+        Hence, the other equilibrium point is $(S, I) = (\frac{k}{\beta}, \frac{b}{\beta})$. Thus, there are two equilibrium points, $(0, 0)$ and $(\frac{k}{\beta}, \frac{b}{\beta})$.
+    \end{flushleft}
+    
+    \begin{flushleft}
+        For the stability, point $(0, 0)$ is \textbf{unstable} because entrance to this equilibrium point is along the line $S = 0$, which over time will make $I$ to decline to 0. This makes sense because the infected individuals cannot exists with the prior absence of susceptible individuals.
+        
+        On the other hand, point $(\frac{k}{\beta}, \frac{b}{\beta})$ is \textbf{stable} because the trajectory that passed this point will always stay close as $t \to \infty$.
+
+    \end{flushleft}
+\end{document}

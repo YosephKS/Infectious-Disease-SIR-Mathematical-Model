@@ -1,0 +1,38 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+    \begin{flushleft}
+        By diving the two autonomous ODE, then
+        
+        \begin{align*}
+            & \frac{dS}{dI} = \frac{(b - \beta I)S}{(\beta S - k)I}
+        \end{align*}
+        
+        Then, by seperation of variables,
+        
+        \begin{align*}
+            & \left(\beta - \frac{k}{S}\right)dS = \left(\frac{b}{I} - \beta\right) dI
+        \end{align*}
+        
+        and take the integration of both sides.
+        
+        \begin{align*}
+            & \int \left(\beta - \frac{k}{S}\right)dS = \int \left(\frac{b}{I} - \beta\right) dI
+        \end{align*}
+        
+        the result is as follows.
+        
+        \begin{align*}
+            & \beta S - k \ln(S) = b \ln(I) - \beta I + k
+        \end{align*}
+        
+        for some constant $k$. Thus,
+        
+        \begin{align*}
+            \frac{e^{\beta S + \beta I}}{S^kI^b} = K
+        \end{align*}
+        
+        for some constant $K$. This equation defines the solution trajectories in the phase plane. Based on the the $S-I$ plane, the orbits $(S(t), I(t))$ is periodic.
+        
+    \end{flushleft}
+\end{document}

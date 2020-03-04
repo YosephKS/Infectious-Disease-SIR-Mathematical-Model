@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfiles}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{MAT3300 Homework 1 Report}
+\author{Yoseph Kurnia Soenggoro}
+\date{28 February 2020}
+
+\begin{document}
+
+\maketitle
+
+\begin{flushleft}
+    Below is an SIR model with births and deaths for infectious disease. $S(t)$ is the number of susceptible individuals, and $I(t)$ is the number of the infected individuals. It is assumed that susceptible individuals can produce an uninfected offspring with rate $b$, that they become infected when they come in contact with infected people at rate $\beta$, and that the infected individuals die at rate $k$. This is described by the following equations:
+    
+    \begin{align*}
+        & \frac{dS}{dt} = bS - \beta IS \\
+        & \frac{dI}{dt} = \beta IS - kI
+    \end{align*}
+    
+\end{flushleft}
+
+\begin{enumerate}
+    \item Find all equilibriums and their stability.
+
+    \item Solve $S$ in terms of a function in $I$ analytically (it is OK to leave a free constant). Are the orbits $(S(t); I(t)), t \geq 0$ periodic in the $S-I$ plane?
+    
+    \item Sketch several typical phase lines in $S-I$ plane.
+    
+    \item Solve the ODE system numerically with $b = \beta = k = 3$. Try initial conditions $S(0) = 1$ and $I(0)$ equal to either $0.1$, $0.5$ or $1.3$. Vary the time step size as $\Delta = 0.1$, $0.01$, $0.001$. Do you observe the convergence?
+    
+\end{enumerate}
+
+\begin{flushleft}
+    \textbf{Solution}
+\end{flushleft}
+
+
+\begin{flushleft}
+    \subfile{sections/Q1}
+\end{flushleft}
+
+\begin{flushleft}
+    \subfile{sections/Q2}
+\end{flushleft}
+
+\begin{flushleft}
+    \subfile{sections/Q3}
+\end{flushleft}
+
+\begin{flushleft}
+    \subfile{sections/Q4}
+\end{flushleft}
+
+\begin{flushleft}
+    \textbf{GitHub Repository}
+    
+    \begin{itemize}
+        \item https://github.com/YosephKS/Infectious-Disease-SIR-Mathematical-Model
+    \end{itemize}
+\end{flushleft}
+
+\end{document}
